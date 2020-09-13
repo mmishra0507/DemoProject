@@ -1,0 +1,84 @@
+create a project in maven
+https://maven.apache.org/surefire/maven-surefire-plugin/dependency-info.html
+https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html
+
+how to install git in local machine
+
+1.https://git-scm.com/download/win
+2.select all default and click on next xext and install
+
+
+install maven
+
+https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
+Maven installation
+1 https://maven.apache.org/download.cgi
+2 download Binary zip archive from link column
+3 copy file to c:\programfiles and extract the zip folder 
+4 then set environment variables
+5 open cmd prompt
+6 type mvn -version
+
+how to set path for jdk and maven in jenkins
+1.click on Manage Jenkins ....select Global Tool Configuration
+
+2.click add jdk 
+3.name jdk1.8 and uncheck install automatically
+4.JAVA_HOME   C:\Program Files\Java\jdk1.8.0_251
+
+To set variable for Maven
+1.click add jdk 
+2.name maven3.6 and uncheck install automatically
+2.MAVEN_HOME C:\Program Files\apache-maven-3.6.3
+
+
+
+how to create account in github
+
+1.Open https://github.com/
+2.Create account
+3.verify email
+4.create repository
+5.copy http from clicking code by choosing http
+git@github.com:user/MvnGitProject.git
+
+
+
+connection with eclipse and git
+1.open perspective select java 
+2.select project then right click and select team and share project
+3.then open eclipse and click on open perspective and select git and click on clone a git repository option
+4.select repository then select finish
+5.source git repository opens
+6.select https as protocol
+7.user and password of github enter
+8.then select store in secure store checkbox and next and next
+9.finish
+
+now to send rest code to github
+1.select openperspective select git
+then select git staging and drag all unstaged to staged and msg in commit msg
+2.author and email used in github and comitter same
+click push and commit
+3.then done
+
+
+how to run project in jenkins
+
+1.open browser and paste
+http://localhost:8888
+2.login page opens then login in jenkins
+3.click create new job
+4.write job name as MavenProject and select free style then click ok
+5.Scroll down to ‘Build‘ option.
+6.Then select git radio button
+7.select project url in http format from github and paste in 
+jenkins git url
+8.click on add
+9.Click on ‘Add Build Step‘ and choose the value ‘Invoke top-level Maven targets‘ from the drop down list.
+10.Maven version as maven3.6 and Type in Goals test
+11.Enter POM path as JenkinsProject\pom.xml
+12.then click save and apply
+
+13.then build now
+14.see result in console output by clicking on arrow near progress bar
